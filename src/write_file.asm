@@ -3,7 +3,7 @@ _write_file:
     mov bp, sp
     sub sp, 2
 
-    mov [ep-2], bx
+    mov [eb-2], bx
 
     mov ax, word [bp+4]
     mov bx, word [bp+6]
@@ -20,7 +20,7 @@ _write_file:
     mov ax, 1
 
 .skip:
-    mov bx, word [ep-2]
+    mov bx, word [eb-2]
 
     mov sp, bp
     pop bp
