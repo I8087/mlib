@@ -1,5 +1,5 @@
-#ifndef _LIBM
-#define _LIBM
+#ifndef LIBM_H
+#define LIBM_H
 
 #ifndef NULL
 #define NULL ((void*) 0)
@@ -20,4 +20,4 @@ short get_file_size(char* filename);
 // Define the screen functions.
 void print_string(char* string);
 
-#endif _LIBM
+#endif LIBM_H
