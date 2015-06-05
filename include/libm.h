@@ -17,4 +17,7 @@ short get_file_size(char* filename);
 
 // Define the keyboard functions.
 
+// Define the screen functions.
+void print_string(char* string);
+
 #endif _LIBM
