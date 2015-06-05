@@ -1,4 +1,4 @@
-_os_load_file:
+_load_file:
     push bp
     mov bp, sp
     sub sp, 2
