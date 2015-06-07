@@ -1,7 +1,7 @@
 @echo off
 title win-build
 cd src
-nasm -f elf -o ..\libm.a libm.asm
+nasm -f elf -o ..\mlib.a mlib.asm
 if %errorlevel%==0 goto skip
 color C
 
