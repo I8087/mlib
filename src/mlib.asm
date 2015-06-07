@@ -1,3 +1,5 @@
+bits 16
+
 %include "..\include\mikedev.inc"
 
 ; Include the disk functions.
