@@ -1,3 +1,5 @@
+global _write_file
+
 _write_file:
     push bp
     mov bp, sp
