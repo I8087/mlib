@@ -1,3 +1,5 @@
+global _load_file
+
 _load_file:
     push bp
     mov bp, sp
