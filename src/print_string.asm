@@ -1,6 +1,4 @@
-SECTION .text
-
-extern _print_string
+global _print_string
 
 _print_string:
     push bp
