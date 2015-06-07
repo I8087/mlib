@@ -1,3 +1,5 @@
+global _get_file_list
+
 _get_file_list:
     push bp
     mov bp, sp
