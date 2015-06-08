@@ -21,9 +21,9 @@
 
 // Define the disk functions.
 char* get_file_list(char* buffer);
-char load_file(char* string, unsigned short location);
-char write_file(char* filename, char* buffer, unsigned short bytestowrite);
-char file_exists(char* filename);
+_Bool load_file(char* string, unsigned short location);
+_Bool write_file(char* filename, char* buffer, unsigned short bytestowrite);
+_Bool file_exists(char* filename);
 void create_file(char* filename);
 void remove_file(char* filename);
 void rename_file(char* old_filename, char* new_oldname);
