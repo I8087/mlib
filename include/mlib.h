@@ -1,8 +1,22 @@
 #ifndef MLIB_H
 #define MLIB_H
 
+// Define some helpful keywords.
+
 #ifndef NULL
 #define NULL ((void*) 0)
+#endif
+
+#ifndef bool
+#define bool _Bool
+#endif
+
+#ifndef true
+#define true 1
+#endif
+
+#ifndef false
+#define false 0
 #endif
 
 // Define the disk functions.
