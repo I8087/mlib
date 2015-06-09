@@ -20,5 +20,9 @@ section .text
 %include "rename_file.asm"
 %include "get_file_size.asm"
 
+; Include the keyboard functions.
+%include "wait_for_key.asm"
+%include "check_for_key.asm"
+
 ; Include the screen functions.
 %include "print_string.asm"
