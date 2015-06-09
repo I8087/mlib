@@ -2,13 +2,12 @@
 #define MLIB_H
 
 // Define some helpful keywords.
-
 #ifndef NULL
 #define NULL ((void*) 0)
 #endif
 
 #ifndef bool
-#define bool _Bool
+typedef int bool;
 #endif
 
 #ifndef true
@@ -21,9 +20,9 @@
 
 // Define the disk functions.
 char* get_file_list(char* buffer);
-_Bool load_file(char* string, unsigned short location);
-_Bool write_file(char* filename, char* buffer, unsigned short bytestowrite);
-_Bool file_exists(char* filename);
+bool load_file(char* string, unsigned short location);
+bool write_file(char* filename, char* buffer, unsigned short bytestowrite);
+bool file_exists(char* filename);
 void create_file(char* filename);
 void remove_file(char* filename);
 void rename_file(char* old_filename, char* new_oldname);
