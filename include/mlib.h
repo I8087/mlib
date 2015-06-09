@@ -29,6 +29,8 @@ void rename_file(char* old_filename, char* new_oldname);
 short get_file_size(char* filename);
 
 // Define the keyboard functions.
+short wait_for_key(void);
+short check_for_key(void);
 
 // Define the screen functions.
 void print_string(char* string);
