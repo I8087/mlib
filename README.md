@@ -6,4 +6,4 @@ This project is licensed under "Simplified BSD" and can be found in the LICENSE 
 
 # Dependencies
 * **NASM**
-* **SmallerC**
+* **SmallerC Linker** (Eventually)
