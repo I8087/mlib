@@ -4,12 +4,6 @@ section .text
 
 %include "..\include\mikedev.inc"
 
-; This is a temporary work around for now...
-%macro call 1
-    mov dx, %1
-    call dx
-%endmacro
-
 ; Include the disk functions.
 %include "get_file_list.asm"
 %include "load_file.asm"
