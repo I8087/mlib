@@ -55,4 +55,8 @@ void print_2hex(unsigned char digit);
 void print_4hex(unsigned short digit);
 char* input_string(char* buffer);
 
+// Define the sound functions.
+void speaker_tone(unsigned short frequency);
+void speaker_off(void);
+
 #endif
