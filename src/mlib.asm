@@ -24,3 +24,6 @@ section .text
 ; Include the sound functions.
 %include "speaker_tone.asm"
 %include "speaker_off.asm"
+
+; Include the BASIC interpreter function.
+%include "run_basic.asm"
