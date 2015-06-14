@@ -20,3 +20,7 @@ section .text
 
 ; Include the screen functions.
 %include "print_string.asm"
+
+; Include the sound functions.
+%include "speaker_tone.asm"
+%include "speaker_off.asm"
