@@ -40,7 +40,7 @@ short get_cursor_pos(void);
 void print_horiz_line(bool double_line);
 void show_cursor(void);
 void hide_cursor(void);
-void draw_block(unsigned short color, unsigned char start_x, unsigned char start_y, unsigned char end_x, unsigned char end_y);
+void draw_block(unsigned char color, unsigned char start_x, unsigned char start_y, unsigned char end_x, unsigned char end_y);
 char* file_selector(void);
 char list_dialog(char* list, char* string1, char* string2);
 void draw_background(char* top, char* bottom, unsigned short color);
