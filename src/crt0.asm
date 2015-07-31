@@ -1,4 +1,5 @@
-global _start
+extern _main
+global __start
 
 __start:
     push bp
