@@ -30,6 +30,7 @@ __start:
     ; NOTE: An os_exit function was submitted to MikeOS.
     ; Hopefully it will be implemented in version 4.6
 
+    mov sp, bp
     pop bp
     ret
 
