@@ -13,6 +13,12 @@ _list_dialog:
 
     call os_list_dialog
 
+    jnc .skip
+
+    xor ax, ax
+
+.skip:
+
     mov bx, word [bp-2]
 
     mov sp, bp
