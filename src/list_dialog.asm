@@ -18,7 +18,6 @@ _list_dialog:
     xor ax, ax
 
 .skip:
-
     mov bx, word [bp-2]
 
     mov sp, bp
