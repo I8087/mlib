@@ -24,6 +24,28 @@ section .text
 
 ; Include the screen functions.
 %include "print_string.asm"
+%include "clear_screen.asm"
+%include "move_cursor.asm"
+%include "get_cursor_pos.asm"
+%include "print_horiz_line.asm"
+%include "show_cursor.asm"
+%include "hide_cursor.asm"
+%include "draw_block.asm"
+%include "file_selector.asm"
+%include "list_dialog.asm"
+%include "draw_background.asm"
+%include "print_newline.asm"
+%include "dump_registers.asm"
+%include "dialog_box.asm"
+%include "print_space.asm"
+%include "dump_string.asm"
+%include "print_digit.asm"
+%include "print_1hex.asm"
+%include "print_2hex.asm"
+%include "print_4hex.asm"
+%include "input_string.asm"
+
+
 
 ; Include the sound functions.
 %include "speaker_tone.asm"

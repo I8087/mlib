@@ -10,6 +10,6 @@ _file_selector:
 
     xor ax, ax
 
-skip:
+.skip:
     pop bp
     ret

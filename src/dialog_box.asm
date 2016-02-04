@@ -7,7 +7,7 @@ _dialog_box:
     mov ax, word [bp+4]
     mov bx, word [bp+6]
     mov cx, word [bp+8]
-    mov dx, byte [bp+10]
+    movzx dx, byte [bp+10]
 
     call os_dialog_box
 
