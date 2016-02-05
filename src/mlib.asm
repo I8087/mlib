@@ -22,6 +22,11 @@ section .text
 %include "wait_for_key.asm"
 %include "check_for_key.asm"
 
+; Inclue the misc functions.
+%include "get_api_version.asm"
+%include "pause.asm"
+%include "fatal_error.asm"
+
 ; Include the screen functions.
 %include "print_string.asm"
 %include "clear_screen.asm"
@@ -44,11 +49,6 @@ section .text
 %include "print_2hex.asm"
 %include "print_4hex.asm"
 %include "input_string.asm"
-
-; Inclue the misc functions.
-%include "get_api_version.asm"
-%include "pause.asm"
-%include "fatal_error.asm"
 
 ; Include the sound functions.
 %include "speaker_tone.asm"

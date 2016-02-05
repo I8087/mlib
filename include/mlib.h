@@ -32,6 +32,12 @@ short get_file_size(char* filename);
 short wait_for_key(void);
 short check_for_key(void);
 
+/* Define the misc functions. */
+char get_api_version(void);
+void pause(unsigned short decisecond);
+void fatal_error(char* message);
+
+
 /* Define the screen functions. */
 void print_string(char* string);
 void clear_screen(void);
