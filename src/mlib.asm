@@ -3,7 +3,7 @@ bits 16
 section .text
 
 ; Include MikeOS API vectors.
-%include "..\include\mikedev.inc"
+%include "../include/mikedev.inc"
 
 ; Include the C runtime function.
 %include "crt0.asm"
