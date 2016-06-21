@@ -66,6 +66,6 @@ void speaker_tone(unsigned short frequency);
 void speaker_off(void);
 
 /* Define the BASIC interpreter function. */
-void run_basic(char* code, unsigned short size);
+void run_basic(char* code, unsigned short size, char* parameter_string);
 
 #endif
