@@ -9,6 +9,7 @@ _run_basic:
 
     mov ax, word [bp+4]
     mov bx, word [bp+6]
+    mov si, word [bp+8]
 
     call os_run_basic
 
