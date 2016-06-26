@@ -32,6 +32,13 @@ section .text
 %include "pause.asm"
 %include "fatal_error.asm"
 
+; Include the port functions.
+%include "port_byte_out.asm"
+%include "port_byte_in.asm"
+%include "serial_port_enable.asm"
+%include "send_via_serial.asm"
+%include "get_via_serial.asm"
+
 ; Include the screen functions.
 %include "print_string.asm"
 %include "clear_screen.asm"
