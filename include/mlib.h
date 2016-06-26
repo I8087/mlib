@@ -20,52 +20,52 @@ typedef int bool;
 
 /* Define the disk functions. */
 char* get_file_list(char* buffer);
-bool load_file(char* string, unsigned short location);
-bool write_file(char* filename, char* buffer, unsigned short bytestowrite);
+bool load_file(char* string, unsigned int location);
+bool write_file(char* filename, char* buffer, unsigned int bytestowrite);
 bool file_exists(char* filename);
 void create_file(char* filename);
 void remove_file(char* filename);
 void rename_file(char* old_filename, char* new_oldname);
-short get_file_size(char* filename);
+int get_file_size(char* filename);
 
 /* Define the keyboard functions. */
-short wait_for_key(void);
-short check_for_key(void);
+int wait_for_key(void);
+int check_for_key(void);
 
 /* Define the misc functions. */
 char get_api_version(void);
-void pause(unsigned short decisecond);
+void pause(unsigned int decisecond);
 void fatal_error(char* message);
 
 
 /* Define the screen functions. */
 void print_string(char* string);
 void clear_screen(void);
-void move_cursor(unsigned short cursor);
-short get_cursor_pos(void);
+void move_cursor(unsigned int cursor);
+int get_cursor_pos(void);
 void print_horiz_line(bool double_line);
 void show_cursor(void);
 void hide_cursor(void);
 void draw_block(unsigned char color, unsigned char start_x, unsigned char start_y, unsigned char end_x, unsigned char end_y);
 char* file_selector(void);
 char list_dialog(char* list, char* string1, char* string2);
-void draw_background(char* top, char* bottom, unsigned short color);
+void draw_background(char* top, char* bottom, unsigned int color);
 void print_newline(void);
 void dump_registers(void);
 bool dialog_box(char* string1, char* string2, char* string3, bool mode);
 void print_space(void);
 void dump_string(char* string);
-void print_digit(unsigned short digit);
+void print_digit(unsigned int digit);
 void print_1hex(unsigned char digit);
 void print_2hex(unsigned char digit);
-void print_4hex(unsigned short digit);
+void print_4hex(unsigned int digit);
 char* input_string(char* buffer);
 
 /* Define the sound functions. */
-void speaker_tone(unsigned short frequency);
+void speaker_tone(unsigned int frequency);
 void speaker_off(void);
 
 /* Define the BASIC interpreter function. */
-void run_basic(char* code, unsigned short size, char* parameter_string);
+void run_basic(char* code, unsigned int size, char* parameter_string);
 
 #endif
