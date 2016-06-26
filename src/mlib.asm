@@ -22,6 +22,11 @@ section .text
 %include "wait_for_key.asm"
 %include "check_for_key.asm"
 
+; Include the math functions.
+%include "bcd_to_int.asm"
+%include "long_int_negate.asm"
+%include "get_random.asm"
+
 ; Inclue the misc functions.
 %include "get_api_version.asm"
 %include "pause.asm"

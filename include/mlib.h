@@ -32,11 +32,15 @@ int get_file_size(char* filename);
 int wait_for_key(void);
 int check_for_key(void);
 
+/* Define the math functions. */
+int bcd_to_int(char number);
+int long_int_negate(int number); /* WRONG! */
+int get_random(int low, int high);
+
 /* Define the misc functions. */
 char get_api_version(void);
 void pause(unsigned int decisecond);
 void fatal_error(char* message);
-
 
 /* Define the screen functions. */
 void print_string(char* string);
