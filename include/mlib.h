@@ -20,7 +20,7 @@ typedef int bool;
 
 /* A global variable for I/O error reporting. */
 #ifndef ioerr
-#define bool ioerr;
+#define bool ioerr
 #endif
 
 /* Define the disk functions. */
