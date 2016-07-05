@@ -50,9 +50,9 @@ void fatal_error(char* message);
 /* Define the port functions. */
 void port_byte_out(int port, char data);
 char port_byte_in(int port);
-char serial_port_enable(bool mode);
-char send_via_serial(char data);
-int get_via_serial(); /* The lower byte is the byte recieved and the upper byte is errorcode. */
+void serial_port_enable(bool mode);
+void send_via_serial(char data);
+char get_via_serial();
 
 /* Define the screen functions. */
 void print_string(char* string);
