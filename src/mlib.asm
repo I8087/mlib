@@ -68,3 +68,8 @@ section .text
 
 ; Include the BASIC interpreter function.
 %include "run_basic.asm"
+
+section .data
+
+; Include the I/O error variable.
+%include "ioerr.asm"

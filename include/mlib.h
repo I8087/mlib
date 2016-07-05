@@ -18,6 +18,11 @@ typedef int bool;
 #define false 0
 #endif
 
+/* A global variable for I/O error reporting. */
+#ifndef ioerr
+#define bool ioerr;
+#endif
+
 /* Define the disk functions. */
 char* get_file_list(char* buffer);
 bool load_file(char* string, unsigned int location);
