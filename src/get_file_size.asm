@@ -11,13 +11,17 @@ _get_file_size:
 
     call os_get_file_size
 
-    jnc .skip
+    jc .error
 
+    mov word [_ioerr], 0
+    jmp .skip
+
+.error:
     xor bx, bx
-
+    mov word [_ioerr], 1
+ 
 .skip:
     mov ax, bx
-
     mov bx, word [bp-2]
 
     mov sp, bp

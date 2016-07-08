@@ -8,5 +8,14 @@ _create_file:
 
     call os_create_file
 
+    jc .error
+
+    mov word [_ioerr], 0
+    jmp .skip
+
+.error:
+    mov word [_ioerr], 1
+ 
+.skip:
     pop bp
     ret

@@ -14,6 +14,15 @@ _load_file:
 
     mov ax, bx
 
+    jc .error
+
+    mov word [_ioerr], 0
+    jmp .skip
+
+.error:
+    mov word [_ioerr], 1
+ 
+.skip:
     mov bx, word [bp-2]
 
     mov sp, bp

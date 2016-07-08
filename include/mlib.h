@@ -25,8 +25,8 @@ typedef int bool;
 
 /* Define the disk functions. */
 char* get_file_list(char* buffer);
-bool load_file(char* string, unsigned int location);
-bool write_file(char* filename, char* buffer, unsigned int bytestowrite);
+int load_file(char* string, unsigned int location);
+void write_file(char* filename, char* buffer, unsigned int bytestowrite);
 bool file_exists(char* filename);
 void create_file(char* filename);
 void remove_file(char* filename);

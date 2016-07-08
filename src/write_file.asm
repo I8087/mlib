@@ -13,14 +13,14 @@ _write_file:
 
     call os_write_file
 
-    jc .failed
+    jc .error
 
-    xor ax, ax
+    mov word [_ioerr], 0
     jmp .skip
 
-.failed:
-    mov ax, 1
-
+.error:
+    mov word [_ioerr], 1
+ 
 .skip:
     mov bx, word [bp-2]
 

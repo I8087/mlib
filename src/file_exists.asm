@@ -17,5 +17,7 @@ _file_exists:
     mov ax, 1
 
 .skip:
+    mov [_ioerr], ax
+
     pop bp
     ret
