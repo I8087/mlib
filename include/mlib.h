@@ -75,7 +75,7 @@ void print_digit(unsigned int digit);
 void print_1hex(unsigned char digit);
 void print_2hex(unsigned char digit);
 void print_4hex(unsigned int digit);
-char* input_string(char* buffer);
+char* input_string(char* buffer, int limit);
 
 /* Define the sound functions. */
 void speaker_tone(unsigned int frequency);
