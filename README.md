@@ -10,7 +10,7 @@ The goal of mlib is to create a clean and nice nonstandard C library for MikeOS 
 To build mlib, simply run the build script. If you're using Windows, run `build-win.bat`. If you're using Linux, run `build-linux.sh`. The output should be an object file, `mlib.a`, in the root directory of mlib.
 
 ## Contributing
-Any kind of contributing is greatly appreciated. Even submitting an issue is helpful! A list of contributers can be found [here](https://github.com/jquery/jquery/graphs/contributors).
+Any kind of contributing is greatly appreciated. Even submitting an issue is helpful! A list of contributers can be found [here](https://github.com/I8087/mlib/graphs/contributors).
 
 ## Licensing
 This project is licensed under "Simplified BSD" and can be found in the LICENSE file.
