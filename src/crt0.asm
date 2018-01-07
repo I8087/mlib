@@ -9,7 +9,7 @@ __start:
     mov bx, .buffer
 
     ; argv[0] is always the file's name!
-    mov [bx], 0
+    mov word [bx], 0
     add bx, 2
 
     ; argc

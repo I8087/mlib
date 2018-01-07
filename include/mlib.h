@@ -77,6 +77,30 @@ void print_2hex(unsigned char digit);
 void print_4hex(unsigned int digit);
 char* input_string(char* buffer, int limit);
 
+/* Define the string functions. */
+int string_length(char* string);
+int find_char_in_string(char* string, char chartofind);
+void string_reverse(char* string);
+void string_charchange(char* string, char chartofind, char chartoreplacewith);
+char* string_uppercase(char* string);
+char* string_lowercase(char* string);
+char* string_copy(char* oldstring, char* newstring);
+char* string_truncate(char* string, int size);
+char* string_join(char* string1, char* string2, char* outstring);
+void string_chomp(char* string);
+void string_strip(char* string, char chartoremove);
+bool string_compare(char* string1, char* string2);
+bool string_strincmp(char* string1, char* string2, char chartocheck);
+void string_parse(); /* RETURNS MULTIPLE STRINGS! FIND A WORK AROUND!!! */
+int string_to_int(char* string);
+char* int_to_string(int number);
+char* sint_to_string(int number);
+char* long_int_to_string(); /* TAKES A LONG! */
+void set_time_fmt(bool format);
+void get_time_string(char *string);
+void set_date_fmt(int format);
+void get_date_string(char* string);
+
 /* Define the sound functions. */
 void speaker_tone(unsigned int frequency);
 void speaker_off(void);
