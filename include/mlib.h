@@ -36,7 +36,7 @@ typedef int bool;
 #endif
 
 #ifndef RED_ON_LIGHT_GREEN
-#define WHITE_ON_LIGHT_RED 0xA4
+#define WHITE_ON_LIGHT_GREEN 0xA4
 #endif
 
 #ifndef KEY_UP
@@ -68,14 +68,23 @@ typedef int bool;
 extern bool ioerr;
 #endif
 
-/* A structure for the string_parse() function. */
+/* A structure for string_parse(). */
+#ifndef str_p
 typedef struct str_p {
     char *str1;
     char *str2;
     char *str3;
     char *str4;
 } str_p;
+#endif
 
+/* Create a long structure for long_int_to_string() and long_int_negate(). */
+#ifndef long_int
+typedef struct long_int {
+    int upper;
+    int lower;
+} long_int;
+#endif
 
 /* Define the disk functions. */
 char* get_file_list(char* buffer);
@@ -93,7 +102,7 @@ int check_for_key(void);
 
 /* Define the math functions. */
 int bcd_to_int(char number);
-int long_int_negate(int number); /* WRONG! */
+long_int* long_int_negate(long_int* i);
 int get_random(int low, int high);
 
 /* Define the misc functions. */
