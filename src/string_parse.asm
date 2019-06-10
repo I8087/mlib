@@ -5,27 +5,24 @@ _string_parse:
     mov bp, sp
     sub sp, 2
 
-    mov si, [bp+4]
+    mov word [bp-2], si
+
+    mov si, [bp+6]
 
     call os_string_parse
 
     push bx
 
-    mov bx, [bp-2]
+    mov bx, [bp+4]
     mov [bx], ax
 
     pop ax
 
-    add bx, 2
-    mov [bx], ax
+    mov [bx+2], ax
+    mov [bx+4], cx
+    mov [bx+6], dx
 
-    add bx, 2
-    mov [bx], cx
-
-    add bx, 2
-    mov [bx], dx
-
-    mov ax, [bp-2]
+    mov si, [bp-2]
 
     mov sp, bp
     pop bp

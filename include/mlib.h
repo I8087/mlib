@@ -102,7 +102,7 @@ int check_for_key(void);
 
 /* Define the math functions. */
 int bcd_to_int(char number);
-long_int* long_int_negate(long_int* i);
+void long_int_negate(long_int *number);
 int get_random(int low, int high);
 
 /* Define the misc functions. */
@@ -154,11 +154,11 @@ void string_chomp(char* string);
 void string_strip(char* string, char chartoremove);
 bool string_compare(char* string1, char* string2);
 bool string_strincmp(char* string1, char* string2, char chartocheck);
-str_p* string_parse(char* string);
+void string_parse(str_p *strings, char* string);
 int string_to_int(char* string);
 char* int_to_string(int number);
 char* sint_to_string(int number);
-char* long_int_to_string(); /* TAKES A LONG! */
+void long_int_to_string(long_int *number, int base, char *output_string);
 void set_time_fmt(bool format);
 void get_time_string(char *string);
 void set_date_fmt(int format);

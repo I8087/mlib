@@ -7,6 +7,6 @@ _print_string:
     mov si, word [bp+4]
 
     call os_print_string
-    
+
     pop bp
     ret

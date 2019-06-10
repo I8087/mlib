@@ -5,21 +5,17 @@ _long_int_negate:
     mov bp, sp
     sub sp, 2
 
+    mov word [bp-2], bx
+
     mov bx, [bp+4]
     mov dx, [bx]
-
-    add bx, 2
-    mov ax, [bx]
+    mov ax, [bx+2]
 
     call os_long_int_negate
 
-    mov bx, [bp-2]
+    mov bx, [bp+4]
     mov [bx], dx
-
-    add bx, 2
-    mov [bx], ax
-
-    mov ax, [bp-2]
+    mov [bx+2], ax
 
     mov sp, bp
     pop bp
