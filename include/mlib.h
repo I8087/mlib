@@ -23,6 +23,15 @@ typedef int bool;
 extern bool ioerr;
 #endif
 
+/* A structure for the string_parse() function. */
+typedef struct str_p {
+    char *str1;
+    char *str2;
+    char *str3;
+    char *str4;
+} str_p;
+
+
 /* Define the disk functions. */
 char* get_file_list(char* buffer);
 int load_file(char* string, unsigned int location);
@@ -91,7 +100,7 @@ void string_chomp(char* string);
 void string_strip(char* string, char chartoremove);
 bool string_compare(char* string1, char* string2);
 bool string_strincmp(char* string1, char* string2, char chartocheck);
-void string_parse(); /* RETURNS MULTIPLE STRINGS! FIND A WORK AROUND!!! */
+str_p* string_parse(char* string);
 int string_to_int(char* string);
 char* int_to_string(int number);
 char* sint_to_string(int number);
