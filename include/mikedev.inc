@@ -1,6 +1,5 @@
 ; ------------------------------------------------------------------
-; Include file for MikeOS program development (API version 16)
-; License at http://mikeos.sourceforge.net/LICENSE.TXT
+; Include file for MikeOS program development (API version 17)
 ; ------------------------------------------------------------------
 
 ; ------------------------------------------------------------------
@@ -102,7 +101,7 @@ os_string_reverse	equ	00AEh	; SI = string location
 os_string_length	equ	002Dh	; AX = string loc, returns AX = length
 os_string_uppercase	equ	0030h	; AX = zero-terminated string
 os_string_lowercase	equ	0033h	; AX = zero-terminated string
-os_input_string		equ	0036h	; AX = string location
+os_input_string		equ	0036h	; AX = string location, BX = maximum characters
 os_string_copy		equ	0039h	; SI = source, DI = dest strings
 os_string_join		equ	003Fh	; AX, BX = source strings, CX = dest
 os_string_compare	equ	0045h	; SI, DI = strings, carry set if same
@@ -151,3 +150,4 @@ os_fatal_error		equ	0027h	; AX = error string location
 
 
 ; ------------------------------------------------------------------
+
