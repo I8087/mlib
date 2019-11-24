@@ -11,7 +11,7 @@ A small hello world program looks like this:
 #include "mlib.h"
 
 int main(int argc, char *argv[]) {
-    print_string("Hello, world!\n");
+    print_string("Hello, world!\r\n");
     return 0;
 }
 
