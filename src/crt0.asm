@@ -5,6 +5,14 @@ __start:
     push bp
     mov bp, sp
 
+    ; Make sure the Mike OS API version is 17 or higher.
+    ; This is insure that the library doesn't call any
+    ; functions that don't exist on older versions.
+    call _get_api_version
+    mov ah, 17
+    cmp al, ah
+    jl .api_error
+
     ; argv
     mov bx, .buffer
 
@@ -66,9 +74,6 @@ __start:
     add sp, 4
 
 .exit:
-    ; NOTE: An os_exit function was submitted to MikeOS.
-    ; Hopefully it will be implemented in version 4.6
-
     mov sp, bp
     pop bp
     ret
@@ -76,7 +81,15 @@ __start:
 .arg_error:
     push .arg_str
     call _print_string
+    call _wait_for_key
     jmp .exit
 
-.arg_str: db "Too many arguments!", 13, 10, 0
+.api_error:
+    push .api_str
+    call _print_string
+    call _wait_for_key
+    jmp .exit
+
+.arg_str: db "Too many arguments were passed!", 13, 10, 0
+.api_str: db "This program will only run on MikeOS 4.6 and up!", 13, 10, 0
 .buffer: times 11 dw 0
