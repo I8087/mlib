@@ -6,7 +6,7 @@ __start:
     mov bp, sp
 
     ; Make sure the Mike OS API version is 17 or higher.
-    ; This is insure that the library doesn't call any
+    ; This will insure that the library doesn't call any
     ; functions that don't exist on older versions.
     call _get_api_version
     mov ah, 17
